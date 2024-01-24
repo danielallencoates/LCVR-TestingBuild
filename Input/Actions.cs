@@ -148,7 +148,7 @@ namespace LCVR.Input
 
                 using var client = new WebClient();
 
-                var actions = client.DownloadString($"https://raw.githubusercontent.com/DaXcess/LCVR-Controller-Profiles/main/{profile}/profile.inputactions");
+                var actions = client.DownloadString($"https://raw.githubusercontent.com/danielallencoates/WMR-for-1.1.0/main/{profile}/profile.inputactions");
                 asset = InputActionAsset.FromJson(actions);
 
                 cache.Add(profile, asset);
